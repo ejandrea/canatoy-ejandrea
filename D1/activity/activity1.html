@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Activity 1: Cafe Delights</title>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Cafe Delights</h1>
+    <p>Your cozy corner for the best coffee and treats in town.</p>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Please fill out the form below:</p>
+
+    <form action="#" method="post">
+      <fieldset id="personal-information">
+        <legend>Personal Information</legend>
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone-number">Phone Number: </label>
+        <input type="number" id="phone-number" name="phone-number" placeholder="123-456-7890" required><br><br>
+
+        <label for="date-of-birth">Date of Birth: </label>
+        <input type="date" id="date-of-birth" name="date-of-birth" required><br><br>
+      </fieldset>
+
+      <fieldset id="visit-information">
+        <legend>Visit Information</legend>
+
+        <label for="preferred-visit-date">Preferred Visit Date: </label>
+        <input type="date" name="preferred-visit-date" id="preferred-visit-date" required><br><br>
+
+        <label for="preferred-time">Preferred Time: </label>
+        <input type="time" name="preferred-time" id="preferred-time" required><br><br>
+
+        <label for="returning-customer">Are you a returning customer?:</label><br>
+        <input type="radio" name="returning-customer" id="yes" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" name="returning-customer" id="no" value="no">
+        <label for="no">No</label>
+        <br><br>
+      </fieldset>
+
+      <fieldset id="order-preferences">
+        <legend>Order Preferences</legend>
+
+        <label for="favorite-drink">Favorite Drink: </label>
+        <select name="favorite-drink" id="favorite-drink">
+          <option value="latte">Latte</option>
+          <option value="soda">Soda</option>
+          <option value="water">Water</option>
+        </select><br><br>
+
+        <label for="dietary-preferences">Select your dietary preferences:</label><br>
+        <input type="checkbox" value="vegetarian" id="vegetarian" name="dietary-preferences">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" value="vegan" id="vegan" name="dietary-preferences">
+        <label for="vegan">Vegan</label><br>
+        <input type="checkbox" value="gluten-free" id="gluten-free" name="dietary-preferences">
+        <label for="gluten-free">Gluten-Free</label>
+        <br><br>
+      </fieldset>
+
+      <fieldset id="feedback">
+        <legend>Feedback</legend>
+
+        <label for="last-visit-rate">Rate Your Last Visit (1-5): </label>
+        <input type="range" id="last-visit-rate" name="last-visit-rate"><br><br>
+
+        <label for="additional-comments">Additional Comments: </label><br>
+        <textarea rows="5" cols="50" id="additional-comments" name="additional-comments"
+          placeholder="Tell us about your experience..." required></textarea><br><br>
+
+        <label for="newsletter">Would you like to receive our newsletter?
+        </label>
+        <input type="checkbox" id="newsletter" name="newsletter" required><br><br>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
+</html>
