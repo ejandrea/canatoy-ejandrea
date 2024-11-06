@@ -316,7 +316,46 @@
     </section>
 
     <section id="order" class="content-section container flex-col">
-        <h2>Order</h2>
+        <h2><span class="highlighted">Order</span> Now</h2>
+        <div class="order-form flex-center">
+            <img src="./image/order_image.png" alt="Vector image of a waiter taking an order">
+
+            <form action="#" method="post">
+                <div class="form-containers">
+                    <section class="form-container">
+                        <div>
+                            <label for="name">Name</label>
+                            <input class="input-style" type="text" id="name" placeholder="your name" required>
+                        </div>
+                        <div>
+                            <label for="number">Number</label>
+                            <input class="input-style" type="tel" id="number" placeholder="your number" required>
+                        </div>
+                        <div>
+                            <label for="order-name">Your Order</label>
+                            <input class="input-style" type="text" id="order-name" placeholder="food name" required>
+                        </div>
+                    </section>
+
+                    <section class="form-container">
+                        <div>
+                            <label for="email">Email</label>
+                            <input class="input-style" type="email" id="email" placeholder="your email" required>
+                        </div>
+                        <div>
+                            <label for="how-much">How Much</label>
+                            <input class="input-style" type="number" id="how-much" placeholder="how many order"
+                                required>
+                        </div>
+                        <div>
+                            <label for="address">Address</label>
+                            <input class="input-style" type="text" id="address" placeholder="your address" required>
+                        </div>
+                    </section>
+                </div>
+                <button class="order-button" type="submit">Submit</button>
+            </form>
+        </div>
     </section>
 
     <section id="our-team" class="content-section container flex-col">

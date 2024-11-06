@@ -1,6 +1,8 @@
 :root {
   --accent: #fac031;
   --black: #282828;
+  --gray: #eeeeee;
+  --dark-gray: #cecece;
   --big-heading-size: 4.5rem;
   --small-heading-size: 1.8rem;
   --medium-text: 1.5rem;
@@ -303,7 +305,7 @@ figcaption {
   width: 250px;
   align-self: center;
   border-radius: 100%;
-  border: 5px solid rgb(205, 205, 205);
+  border: 5px solid var(--dark-gray);
 }
 
 #review-grid .item1 {
@@ -321,4 +323,54 @@ figcaption {
 
 #review-grid h3 {
   font-size: var(--medium-text);
+}
+
+/* Order Section */
+
+#order {
+  background-image: url(./image/bg2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.order-form {
+  gap: 100px;
+}
+
+#order img {
+  max-width: 50%;
+  height: 700px;
+}
+
+form {
+  width: 100%;
+}
+
+form label {
+  font-size: var(--regular-text);
+}
+
+form button {
+  margin-top: 30px;
+}
+
+.form-containers {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.input-style {
+  width: 100%;
+  border: 4px solid var(--dark-gray);
+  border-radius: 2%;
+  padding: 12px 20px;
+  background-color: var(--gray);
 }
