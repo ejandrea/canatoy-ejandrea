@@ -98,6 +98,10 @@ ul li a:hover {
   text-decoration: underline;
 }
 
+section:not(#hero) {
+  padding-top: 100px; /* add a default padding to unblock the content from the navbar's height*/
+}
+
 .navlink-icons {
   display: flex;
   gap: 20px;
@@ -147,6 +151,12 @@ h1,
 h2 {
   font-size: var(--big-heading-size);
   line-height: 1.1;
+  text-align: center;
+}
+
+#hero h1,
+#about h2 {
+  text-align: left;
 }
 
 #hero p,
@@ -164,18 +174,10 @@ h2 {
 
 /* Menu */
 
-#menu {
-  padding-top: 100px;
-}
-
-#menu h2 {
-  text-align: center;
-}
-
 #menu-grid {
   display: grid;
-  grid-template-areas: "a b c d" "e f g h";
   gap: 20px;
+  grid-template-areas: "a b c d" "e f g h";
 }
 
 #menu-grid > figure {
@@ -243,4 +245,41 @@ figcaption {
   color: var(--accent);
   align-self: center;
   font-size: var(--regular-text);
+}
+
+#gallery-menu {
+  display: grid;
+  grid-template-areas: "1 2 3" "4 5 6";
+  gap: 20px;
+}
+
+#gallery-menu img {
+  object-fit: cover;
+  width: 100%;
+  height: 350px;
+  border-radius: 2%;
+}
+
+#gallery-menu .item1 {
+  grid-area: 1;
+}
+
+#gallery-menu .item2 {
+  grid-area: 2;
+}
+
+#gallery-menu .item3 {
+  grid-area: 3;
+}
+
+#gallery-menu .item4 {
+  grid-area: 4;
+}
+
+#gallery-menu .item5 {
+  grid-area: 5;
+}
+
+#gallery-menu .item6 {
+  grid-area: 6;
 }
