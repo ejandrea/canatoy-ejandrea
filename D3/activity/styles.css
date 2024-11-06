@@ -283,3 +283,42 @@ figcaption {
 #gallery-menu .item6 {
   grid-area: 6;
 }
+
+/* Review Section */
+#review-grid {
+  display: flex;
+  gap: 20px;
+  grid-template-areas: "r1 r2 r3 r4";
+  text-align: center;
+}
+
+#review-grid figure {
+  padding: 30px;
+  border-radius: 2%;
+  box-shadow: var(--box-shadow);
+  line-height: 1.5;
+}
+
+#review-grid figure img {
+  width: 250px;
+  align-self: center;
+  border-radius: 100%;
+  border: 5px solid rgb(205, 205, 205);
+}
+
+#review-grid .item1 {
+  grid-area: r1;
+}
+#review-grid .item2 {
+  grid-area: r2;
+}
+#review-grid .item3 {
+  grid-area: r3;
+}
+#review-grid .item4 {
+  grid-area: r4;
+}
+
+#review-grid h3 {
+  font-size: var(--medium-text);
+}
