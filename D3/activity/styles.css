@@ -27,6 +27,7 @@ body {
 a,
 button {
   all: unset; /* resets the default style */
+  cursor: pointer;
 }
 
 .content-section {
@@ -91,7 +92,6 @@ ul li a {
   color: var(--black);
   font-weight: 400;
   font-size: var(--regular-text);
-  cursor: pointer;
 }
 
 ul li a:hover {
@@ -111,7 +111,6 @@ section:not(#hero) {
 
 .navlink-icon {
   background-color: none;
-  cursor: pointer;
 }
 
 .navlink-icon:hover {
@@ -126,7 +125,6 @@ section:not(#hero) {
   background-color: var(--accent);
   color: white;
   padding: 15px 45px;
-  cursor: pointer;
   border-radius: 5%;
 }
 
@@ -419,4 +417,29 @@ form button {
   object-fit: cover;
   padding: 20px;
   border-radius: inherit;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: var(--gray);
+  text-align: center;
+  display: grid;
+  grid-template-areas: "locations links contacts service follows";
+  padding: 75px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer h4 {
+  font-size: var(--medium-text);
+  margin-bottom: 20px;
+}
+
+#social-media i {
+  margin-left: 10px;
 }
