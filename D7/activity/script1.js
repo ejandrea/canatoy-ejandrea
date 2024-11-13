@@ -27,7 +27,7 @@ const handleSubmit = event => {
   monthlyPaymentText.innerHTML = `<strong> Monthly Payment: $${monthlyPayment.toFixed(
     2
   )}</strong>`;
-  monthlyPaymentText.className = "mt-3 align-self-start container w-50";
+  monthlyPaymentText.className = "mt-3 align-self-start container w-75";
 };
 
 form.addEventListener("submit", handleSubmit);
